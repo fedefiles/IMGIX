@@ -10,7 +10,9 @@ export default function App() {
       <Card.Body>
         <Row justify="center" align="center" display="flex">
             <Col>
-            <Button> onPress={() => {Rotate} }</Button>
+            <Text h6 size={25} color="white" css={{ m: 0 }}>
+          IMGIX-UI
+        </Text>
             </Col>          
             <Col>
             <Button> <Link to='/'>Home</Link></Button>
