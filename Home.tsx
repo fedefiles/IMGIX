@@ -90,13 +90,7 @@ const Home = () => {
         Pick an Image
      </Button>
       <br/>
-     <Button onPress={}>
-       Rotate
-     </Button>
-     <br/>
-     <Button onPress={}>
-      Adjust
-     </Button>
+    
      </Col>
      </div>
   )

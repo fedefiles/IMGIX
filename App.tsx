@@ -1,25 +1,20 @@
 import * as React from 'react';
-import { Container, Row, Navbar, Button, Text, Card, Radio } from "@nextui-org/react";
+import { Container, Row, Navbar, Button, Text, Card, Radio, Spacer } from "@nextui-org/react";
 import { Link} from 'react-router-dom';
 import Main from './Main';
 export default function App() {
   return (
     <Container>
-    <Card css={{ $$cardColor: '$colors$primary' }}>
+    <Card css={{ $$cardColor: '$colors$gradient' }}>
       <Card.Body>
-        <Row justify="center" align="center">
-          <Text h6 size={15} color="white" css={{ m: 0 }}>
-          <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/rotate'>Rotate</Link></li>
-          <li><Link to='/adjust'>Adjust</Link></li>
-        </ul>
-        
-              
-          </Text>
+        <Row justify="center" align="center" display="flex">
+            <Button> <Link to='/'>Home</Link></Button>
+            <Button> <Link to='/rotate'>Rotate</Link></Button>
+            <Button> <Link to='/adjust'>Adjust</Link></Button>
         </Row>
       </Card.Body>
     </Card>
+    <Spacer y={1} />
     <Main /> 
   </Container>
   
