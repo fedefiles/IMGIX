@@ -1,7 +1,9 @@
+import React from "react"
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Rotate from './Rotate';
 import Adjust from './Adjust';
+
 const Main = () => {
 return (         
     <Routes>
