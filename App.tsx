@@ -10,7 +10,7 @@ export default function App() {
       <Card.Body>
         <Row justify="center" align="center" display="flex">
             <Col>
-            <Text h6 size={25} color="white" css={{ m: 5 }}>
+            <Text h6 size={25} color="white" css={{ m: 12 }}>
           IMGIX-UI
         </Text>
             </Col>          
