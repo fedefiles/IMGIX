@@ -10,7 +10,7 @@ export default function App() {
       <Card.Body>
         <Row justify="center" align="center" display="flex">
             <Col>
-            <Button> onPress={() => Rotate }</Button>
+            <Button> onPress={() => {Rotate} }</Button>
             </Col>          
             <Col>
             <Button> <Link to='/'>Home</Link></Button>
