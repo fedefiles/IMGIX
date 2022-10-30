@@ -3,10 +3,6 @@ import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
-import ImgixClient from '@imgix/js-core';
-
-import { Imagestate } from "./Home";
-
 import ImgContext from "./ImgContext";
 
 import useContext from "react";
