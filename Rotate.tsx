@@ -12,10 +12,7 @@ import ImgContext from "./ImgContext";
 import useContext from "react";
 
 const {item} = useContext(ImgContext);
-const client = new ImgixClient({
-  domain: 'testing.imgix.net',
-  secureURLToken: 'ak_bf229557a3d350706e8e1c42bf659237830870ad5f95e6902e07215ad6c02738',
-});
+
 
 let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
