@@ -58,7 +58,8 @@ const Rotate = () => {
   const [orientcount, setOrientcount] = useState(0);
    
   const makeflip = () => {
-    if (flipcount < (orientpops.length)) {
+    if (flipcount < ((flipops.length)))
+     {
       setFlipcount(flipcount + 1);
     } else {
       setFlipcount(0)
@@ -68,7 +69,7 @@ const Rotate = () => {
   }
 
   const makeorient = () => {
-    if (orientcount < (flipops.length)) {
+    if (orientcount < (orientpops.length)) {
       setOrientcount(orientcount + 1);
     } else {
       setOrientcount(0)
