@@ -88,10 +88,16 @@ const Rotate = () => {
     <br/>
        
      <Button onPress={increaseCount}>
-        Pick an Image
+        Flip
      </Button>
       <br/>
-    
+      <Button onPress={increaseCount}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={increaseCount}>
+        Rot
+     </Button>
      </Col>
      </div>
   )

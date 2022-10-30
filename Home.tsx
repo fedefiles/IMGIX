@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import { Card, Col, Row, Button, Tex, Spacer } from "@nextui-org/react";
 
 
 let urls: string[] = [
@@ -84,13 +84,15 @@ const Home = () => {
  </Card>
 
   <Col justify="center" align="center">
-    <br/>
+    
        
      <Button onPress={increaseCount}>
         Pick an Image
      </Button>
       <br/>
-    
+      <Button onPress={increaseCount}>
+        Pick an Image
+     </Button>
      </Col>
      </div>
   )
