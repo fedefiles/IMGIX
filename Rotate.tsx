@@ -102,8 +102,8 @@ console.log(url); // => 'https://testing.imgix.net/users/1.png?w=400&h=300&s=…
    </Card.Footer>
  </Card>
  <Imgix
-        src="https://assets.imgix.net/examples/pione.jpg"
-        sizes="200px"
+        src={urls[index]}
+        sizes="400px"
         imgixParams={{ fit: "crop", ar: "1:1" }}
       />
   <Col justify="center" align="center">
