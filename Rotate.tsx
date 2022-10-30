@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
+let flipops:string[] = ["h", "v", "hv"];
 
 let urls: string[] = [
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -44,7 +45,13 @@ let urls: string[] = [
 
 const Rotate = () => {
   const [index, setIndex] = useState(0);
-    
+  const [flip, setFlip] = useState(0)
+   
+  const makeflip = () => {
+    setFlip(flip + 1);
+    console.log(flip);
+  }
+
   const increaseCount = () => {
     setIndex(index + 1);
   }
@@ -87,7 +94,7 @@ const Rotate = () => {
   <Col justify="center" align="center">
     <br/>
        
-     <Button onPress={increaseCount}>
+     <Button onPress={makeflip}>
         Flip
      </Button>
       <br/>
