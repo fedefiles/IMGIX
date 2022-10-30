@@ -95,4 +95,3 @@ const Home = () => {
   )
 };
 export default Home;
-export {Imagestate};

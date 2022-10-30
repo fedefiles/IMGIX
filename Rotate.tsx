@@ -104,7 +104,7 @@ const Rotate = () => {
       <Container>
          
       <Imgix
-        src={urls[item]}
+        src={urls[index]}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
