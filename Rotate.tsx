@@ -1,6 +1,14 @@
 
 import React, { useState } from 'react';
+import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+
+import ImgixClient from '@imgix/js-core';
+
+const client = new ImgixClient({
+  domain: 'testing.imgix.net',
+  secureURLToken: 'ak_bf229557a3d350706e8e1c42bf659237830870ad5f95e6902e07215ad6c02738',
+});
 
 let flipops:string[] = ["h", "v", "hv"];
 
@@ -50,6 +58,9 @@ const Rotate = () => {
   const makeflip = () => {
     setFlip(flip + 1);
     console.log(flip);
+    setIndex(0);
+    const url = client.buildURL(urls[index], { w: 400, h: 300 });
+console.log(url); // => 'https://testing.imgix.net/users/1.png?w=400&h=300&s=…'
   }
 
   const increaseCount = () => {
@@ -90,7 +101,11 @@ const Rotate = () => {
      </Row>
    </Card.Footer>
  </Card>
-
+ <Imgix
+        src="https://assets.imgix.net/examples/pione.jpg"
+        sizes="200px"
+        imgixParams={{ fit: "crop", ar: "1:1" }}
+      />
   <Col justify="center" align="center">
     <br/>
        
