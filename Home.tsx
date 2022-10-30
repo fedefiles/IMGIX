@@ -82,7 +82,7 @@ const Home = () => {
      </Row>
    </Card.Footer>
  </Card>
-
+ <Spacer y={1} />
   <Col justify="center" align="center">
     
        
@@ -90,9 +90,7 @@ const Home = () => {
         Pick an Image
      </Button>
       <br/>
-      <Button onPress={increaseCount}>
-        Pick an Image
-     </Button>
+      
      </Col>
      </div>
   )
