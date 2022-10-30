@@ -6,6 +6,9 @@ import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 import ImgixClient from '@imgix/js-core';
 import { Imagestate } from "./Home";
 
+import ImgContext from "./ImgContext";
+import useContext from "react";
+const {item} = useContext(ImgContext);
 const client = new ImgixClient({
   domain: 'testing.imgix.net',
   secureURLToken: 'ak_bf229557a3d350706e8e1c42bf659237830870ad5f95e6902e07215ad6c02738',
@@ -110,7 +113,7 @@ const Rotate = () => {
       <Container>
          
       <Imgix
-        src={urls[index]}
+        src={urls[item]}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
