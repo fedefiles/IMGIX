@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
-import ImgContext from "./ImgContext";
+//import ImgContext from "./ImgContext";
 
-import useContext from "react";
+//import useContext from "react";
 
-const {item} = useContext(ImgContext);
+//const {item} = useContext(ImgContext);
 
 
 let flipops:string[] = ["h", "v", "hv"];
