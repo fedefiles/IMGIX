@@ -6,14 +6,16 @@ import Rotate from './Rotate';
 export default function App() {
   return (
     <Container>
-    <Card css={{ $$cardColor: '$colors$neutral' }}>
+      <Row>
+      <Card css={{ $$cardColor: '$colors$neutral' }}>
       <Card.Body>
         <Row justify="center" align="center" display="flex">
-            <Col>
-            <Text h6 size={25} color="white" css={{ m: 0 }}>
+        <Text h6 size={25} color="white" css={{ m: 0 }}>
           IMGIX-UI
         </Text>
-            </Col>          
+        </Row> 
+        <Spacer y={1} />
+        <Row>
             <Col>
             <Button> <Link to='/'>Home</Link></Button>
             </Col>
@@ -23,9 +25,13 @@ export default function App() {
             <Col>
             <Button> <Link to='/adjust'>Adjust</Link></Button>
             </Col>
-        </Row>
+          </Row>
+           
       </Card.Body>
+      
     </Card>
+   </Row>
+  
     <Spacer y={1} />
     <Main /> 
   </Container>

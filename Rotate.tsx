@@ -104,7 +104,7 @@ const Rotate = () => {
     <div>
       <Imagestate.Consumer>
       {(fname) => {
-            return (data);
+            return ("");
           }}
          </Imagestate.Consumer>
       <Container>
