@@ -84,7 +84,7 @@ const Rotate = () => {
   const makerotate = () => {
     if (angledeg < 360) {
       setAngledeg(angledeg +30)
-      console.log(angledeg);
+     
     } else {
       setAngledeg(0)
     }
@@ -104,7 +104,7 @@ const Rotate = () => {
      
  <Imgix
         src={urls[index]}
-        sizes="400px"
+        sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
   <Col justify="center" align="center">
