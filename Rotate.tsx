@@ -53,14 +53,12 @@ let urls: string[] = [
 
 const Rotate = () => {
   const [index, setIndex] = useState(0);
-  const [flip, setFlip] = useState(0)
+  const [flipcount, setFlipcount] = useState(0)
    
   const makeflip = () => {
-    setFlip(flip + 1);
-    console.log(flip);
-    setIndex(0);
-    const url = client.buildURL(urls[index], { w: 400, h: 300 });
-console.log(url); // => 'https://testing.imgix.net/users/1.png?w=400&h=300&s=…'
+    flipops
+    setFlipcount(flipcount + 1);
+   
   }
 
   const increaseCount = () => {
@@ -104,7 +102,7 @@ console.log(url); // => 'https://testing.imgix.net/users/1.png?w=400&h=300&s=…
  <Imgix
         src={urls[index]}
         sizes="400px"
-        imgixParams={{ fit: "crop", ar: "1:1", flip: "hv", }}
+        imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], }}
       />
   <Col justify="center" align="center">
     <br/>
