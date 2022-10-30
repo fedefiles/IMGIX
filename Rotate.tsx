@@ -12,7 +12,6 @@ const {item} = useContext(ImgContext);
 
 let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
-let urlset:string = " ";
 
 let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -67,8 +66,7 @@ const Rotate = () => {
     } else {
       setFlipcount(0)
     }
-    
-   
+       
   }
 
   const makeorient = () => {
@@ -78,8 +76,7 @@ const Rotate = () => {
       setOrientcount(0)
     }
     
-   
-  }
+     }
 
   const makerotate = () => {
     if (angledeg < 360) {
@@ -89,13 +86,12 @@ const Rotate = () => {
       setAngledeg(0)
     }
     
-   
-  }
+     }
 
   const increaseCount = () => {
     setIndex(index + 1);
   }
-  const decreaseCount = () => {
+    const decreaseCount = () => {
     setIndex(index - 1); 
   }
     
