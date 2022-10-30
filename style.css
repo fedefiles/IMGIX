@@ -1,16 +1,9 @@
-h1, p {
-  font-family: Lato;
-}
-
-
 .App {
-  font-family: sans-serif;
-  text-align: center;
   display: flex;
 }
 
 .App > img {
-  margin: 0 auto;
-  width: 200px;
+  margin: 10px auto;
+  width: 10vw;
   height: 200px;
 }
