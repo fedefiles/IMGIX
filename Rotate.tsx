@@ -104,7 +104,7 @@ console.log(url); // => 'https://testing.imgix.net/users/1.png?w=400&h=300&s=…
  <Imgix
         src={urls[index]}
         sizes="400px"
-        imgixParams={{ fit: "crop", ar: "1:1" }}
+        imgixParams={{ fit: "crop", ar: "1:1", flip: "hv", }}
       />
   <Col justify="center" align="center">
     <br/>
