@@ -82,7 +82,7 @@ const Rotate = () => {
   }
 
   const makerotate = () => {
-    if (angle < 360) {
+    if (angledeg < 360) {
       setAngledeg(angledeg +30)
       console.log(angledeg);
     } else {
