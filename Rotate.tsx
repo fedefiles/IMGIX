@@ -97,7 +97,7 @@ const Rotate = () => {
     
   return (
     <div>  
-      <Container>
+      <Container fluid="true">
          
       <Imgix
         src={urls[index]}
