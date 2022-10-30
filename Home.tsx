@@ -91,10 +91,7 @@ const Home = () => {
       <br/>
       
      </Col>
-     <Imagestate.Provider value={urls[index]}>
-        
-        </Imagestate.Provider>
-     </div>
+         </div>
   )
 };
 export default Home;
