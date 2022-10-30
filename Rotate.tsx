@@ -14,7 +14,7 @@ let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
 let angle:number = 0;
 
-let urls: string[] = [
+let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
 "https://assets.imgix.net/unsplash/bridge.jpg",
 "https://assets.imgix.net/unsplash/citystreet.jpg",
