@@ -1,7 +1,8 @@
+import {createContext} from "react";
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Tex, Spacer } from "@nextui-org/react";
 
-
+const Imagestate = createContext("");
 let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
 "https://assets.imgix.net/unsplash/bridge.jpg",
@@ -92,7 +93,11 @@ const Home = () => {
       <br/>
       
      </Col>
+     <Imagestate.Provider value={urls[index]}>
+        
+        </Imagestate.Provider>
      </div>
   )
 };
 export default Home;
+export {Imagestate};

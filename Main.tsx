@@ -5,7 +5,8 @@ import Rotate from './Rotate';
 import Adjust from './Adjust';
 
 const Main = () => {
-return (         
+return (  
+         
     <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/rotate' element={<Rotate/>} />

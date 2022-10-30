@@ -4,6 +4,7 @@ import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
 import ImgixClient from '@imgix/js-core';
+import { Imagestate } from "./Home";
 
 const client = new ImgixClient({
   domain: 'testing.imgix.net',
@@ -12,7 +13,7 @@ const client = new ImgixClient({
 
 let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
-let angle:number = 0;
+let urlset:string = " ";
 
 let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -101,12 +102,20 @@ const Rotate = () => {
     
   return (
     <div>
- <Container>
- <Imgix
+      <Imagestate.Consumer>
+      {(fname) => {
+            return (data);
+          }}
+         </Imagestate.Consumer>
+      <Container>
+         
+      <Imgix
         src={urls[index]}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
+
+      
       </Container>
   <Col justify="center" align="center">
     <br/>
