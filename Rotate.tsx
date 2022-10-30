@@ -56,8 +56,12 @@ const Rotate = () => {
   const [flipcount, setFlipcount] = useState(0)
    
   const makeflip = () => {
+    if (flipcount < (flipops.length)) {
+      setFlipcount(flipcount + 1);
+    } else {
+      setFlipcount(0)
+    }
     
-    setFlipcount(flipcount + 1);
    
   }
 
