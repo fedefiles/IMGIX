@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import Imgix from "react-imgix";
-import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
 import ImgixClient from '@imgix/js-core';
 
@@ -101,12 +101,13 @@ const Rotate = () => {
     
   return (
     <div>
-     
+ <Container>
  <Imgix
         src={urls[index]}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
+      </Container>
   <Col justify="center" align="center">
     <br/>
        
