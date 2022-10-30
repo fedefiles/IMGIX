@@ -11,6 +11,7 @@ const client = new ImgixClient({
 });
 
 let flipops:string[] = ["h", "v", "hv"];
+let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
 
 let urls: string[] = [
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -53,13 +54,24 @@ let urls: string[] = [
 
 const Rotate = () => {
   const [index, setIndex] = useState(0);
-  const [flipcount, setFlipcount] = useState(0)
+  const [flipcount, setFlipcount] = useState(0);
+  const [orientcount, setOrientcount] = useState(0);
    
   const makeflip = () => {
-    if (flipcount < (flipops.length)) {
+    if (flipcount < (orientpops.length)) {
       setFlipcount(flipcount + 1);
     } else {
       setFlipcount(0)
+    }
+    
+   
+  }
+
+  const makeorient = () => {
+    if (orientcount < (flipops.length)) {
+      setOrientcount(orientcount + 1);
+    } else {
+      setOrientcount(0)
     }
     
    
@@ -78,7 +90,7 @@ const Rotate = () => {
  <Imgix
         src={urls[index]}
         sizes="400px"
-        imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], }}
+        imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount],}}
       />
   <Col justify="center" align="center">
     <br/>
@@ -87,7 +99,7 @@ const Rotate = () => {
         Flip
      </Button>
       <br/>
-      <Button onPress={increaseCount}>
+      <Button onPress={makeorient}>
        Orient
      </Button>
      <br/>
