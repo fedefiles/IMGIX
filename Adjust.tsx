@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { Card, Col, Row, Button, Text } from "@nextui-org/react";
+import Imgix from "react-imgix";
+import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
 
-let urls: string[] = [
+let flipops:string[] = ["h", "v", "hv"];
+let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
+
+let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
 "https://assets.imgix.net/unsplash/bridge.jpg",
 "https://assets.imgix.net/unsplash/citystreet.jpg",
@@ -43,56 +47,82 @@ let urls: string[] = [
 
 const Adjust = () => {
   const [index, setIndex] = useState(0);
+  const [flipcount, setFlipcount] = useState(0);
+  const [orientcount, setOrientcount] = useState(0);
+  const [angledeg, setAngledeg] = useState(0)
+  
+   
+  const makeflip = () => {
+    if (flipcount < ((flipops.length)))
+     {
+      setFlipcount(flipcount + 1);
+    } else {
+      setFlipcount(0)
+    }
+       
+  }
+
+  const makeorient = () => {
+    if (orientcount < (orientpops.length)) {
+      setOrientcount(orientcount + 1);
+    } else {
+      setOrientcount(0)
+    }
+  }
+     
+
+  const makerotate = () => {
+    if (angledeg < 360) {
+      setAngledeg(angledeg +30)
+     
+    } else {
+      setAngledeg(0)
+    }
     
+     }
+
   const increaseCount = () => {
     setIndex(index + 1);
   }
-  const decreaseCount = () => {
+    const decreaseCount = () => {
     setIndex(index - 1); 
   }
     
   return (
-    <div>
-      <Card css={{ w: "100%", h: "500px" }}>
-   
-   <Card.Body css={{ p: 0 }}>
-     <Card.Image
-       src={urls[index]}
-       objectFit="cover"
-       width="100"
-       height="100%"
-       alt="Relaxing app background"
-       
-     />
-   </Card.Body>
-   <Card.Footer
-     isBlurred
-     css={{
-       position: "absolute",
-       bgBlur: "#0f111466",
-       borderTop: "$borderWeights$light solid $gray800",
-       bottom: 0,
-       zIndex: 1,
-     }}
-   >
-     <Row justify="center" align="center">
-       
-     
-         
-     </Row>
-   </Card.Footer>
- </Card>
+    <div>  
+      <Container justify="center" align="center">
+        <Col>
+      <Imgix
+        src={urls[index]}
+        sizes="70vw"
+        imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
+      />
 
+      </Col>
+      </Container>
   <Col justify="center" align="center">
+  <br/>
+       
+  <Button onPress={increaseCount}>
+        Pick an image
+     </Button>
     <br/>
        
-     <Button onPress={increaseCount}>
-        Pick an Image
+     <Button onPress={makeflip}>
+        Flip
      </Button>
       <br/>
-    
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
      </Col>
      </div>
   )
 };
+
+
 export default Adjust;
