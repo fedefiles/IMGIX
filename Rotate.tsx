@@ -4,14 +4,6 @@ import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 
 
-
-//import ImgContext from "./ImgContext";
-
-//import useContext from "react";
-
-//const {item} = useContext(ImgContext);
-
-
 let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
 
