@@ -9,11 +9,7 @@ export default function App() {
       <Row>
       <Card css={{ $$cardColor: '$colors$neutral' }}>
       <Card.Body>
-        <Row justify="center" align="center" display="flex">
-        <Text h6 size={25} color="white" css={{ m: 0 }}>
-          IMGIX-UI
-        </Text>
-        </Row> 
+        
         <Spacer y={1} />
         <Row>
             <Col>
