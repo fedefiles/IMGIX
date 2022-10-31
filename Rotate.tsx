@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
 import ImgContext from "./ImgContext";
+import useContext from "react";
 
 //import ImgContext from "./ImgContext";
 
@@ -78,7 +79,7 @@ const Rotate = () => {
       setOrientcount(0)
     }
     
-     }
+     
 
   const makerotate = () => {
     if (angledeg < 360) {
