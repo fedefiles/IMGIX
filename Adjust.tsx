@@ -127,7 +127,7 @@ const Adjust = () => {
       <Imgix
         src={urls[index]}
         sizes="60vw"
-        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma, invert :  }}
+        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma, invert : inv }}
       />
 
       </Col>
