@@ -123,11 +123,11 @@ const Adjust = () => {
      Brightness
      </Button>
       <br/>
-      <Button onPress={increaseCount}>
+      <Button onPress={makecontrast}>
       Contrast 
      </Button>
      <br/>
-     <Button onPress={increaseCount}>
+     <Button onPress={makeexposure}>
      Exposure
      </Button>
     
