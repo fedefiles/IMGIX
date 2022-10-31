@@ -24,7 +24,7 @@ const Home = () => {
     <Card0>
 
     </Card0>
-    <Spacer x={2} />
+    <Spacer x={1} />
     <Card css={{ w: "100%", h: "500px" }}>
    
    <Card.Body css={{ p: 0 }}>
