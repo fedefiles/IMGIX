@@ -11,7 +11,7 @@ export default function App() {
           <Grid.Container gap={6}>
         <Grid>
         <Button 
-  Medium 
+  Large 
   as="a"
   rel="noopener noreferrer"
   target="_self"
@@ -41,7 +41,7 @@ export default function App() {
         </Grid>
         <Grid>
         <Button 
-  Medium 
+  Large 
   as="a"
   rel="noopener noreferrer"
   target="_self"
@@ -71,7 +71,7 @@ export default function App() {
         </Grid>
         <Grid>
         <Button 
-  Medium 
+ Large 
   as="a"
   rel="noopener noreferrer"
   target="_parent"
