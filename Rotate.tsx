@@ -83,7 +83,7 @@ const Rotate = () => {
      }
 
   const increaseCount = () => {
-    if (index < (urls.length)) {
+    if (index < ((urls.length)+1)) {
       setIndex(index +1)
      
     } else {
