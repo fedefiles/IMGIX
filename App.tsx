@@ -7,6 +7,21 @@ export default function App() {
   return (
     <Container>
       <Row>
+      <Card css={{ $$cardColor: '$colors$primary' }}>
+    <Card.Body>
+      <Row justify="center" align="center">
+      <Col>
+            <Button> <Link to='/'>Home</Link></Button>
+            </Col>
+            <Col>
+            <Button> <Link to='/rotate'>Rotate</Link></Button>
+            </Col>
+            <Col>
+            <Button> <Link to='/adjust'>Adjust</Link></Button>
+            </Col>
+      </Row>
+    </Card.Body>
+    </Card>
       <Card css={{ $$cardColor: '$colors$neutral' }}>
       <Card.Body>
            
