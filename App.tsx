@@ -19,12 +19,12 @@ export default function App() {
   target="_self"
   href="/"
   css={{ 
-    maxWidth: '$12', // space[12]
+    maxWidth: '$14', // space[12]
     borderRadius: '$xs', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
-    height: '$12', // space[12]
+    height: '$14', // space[12]
     boxShadow: '$md', // shadows.md
     '&:hover': {
       background: '$gray100',
@@ -49,12 +49,12 @@ export default function App() {
   target="_self"
   href="/rotate"
   css={{ 
-    maxWidth: '$12', // space[12]
+    maxWidth: '$14', // space[12]
     borderRadius: '$xs', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
-    height: '$12', // space[12]
+    height: '$14', // space[12]
     boxShadow: '$md', // shadows.md
     '&:hover': {
       background: '$gray100',
@@ -77,15 +77,15 @@ export default function App() {
   auto 
   as="a"
   rel="noopener noreferrer"
-  target="_self"
-  href="/rotate"
+  target="_parent"
+  href="/adjust"
   css={{ 
-    maxWidth: '$12', // space[12]
+    maxWidth: '$14', // space[12]
     borderRadius: '$xs', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
-    height: '$12', // space[12]
+    height: '$14', // space[12]
     boxShadow: '$md', // shadows.md
     '&:hover': {
       background: '$gray100',
