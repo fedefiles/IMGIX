@@ -106,7 +106,7 @@ const Adjust = () => {
       <Imgix
         src={urls[index]}
         sizes="60vw"
-        imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
+        imgixParams={{ fit: "crop", ar: "1:1", bri: bright}}
       />
 
       </Col>
