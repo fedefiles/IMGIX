@@ -110,56 +110,56 @@ const Adjust = () => {
     <br/>
        
      <Button onPress={makeflip}>
-        Flip
+     Brightness
      </Button>
       <br/>
       <Button onPress={makeorient}>
-       Orient
+      Contrast 
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Exposure
      </Button>
     
      <br/>
       <Button onPress={makeorient}>
-       Orient
+      Gamma
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Highlight
      </Button>
      <br/>
       <Button onPress={makeorient}>
-       Orient
+      Hue Shift
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Invert
      </Button>
      <br/>
       <Button onPress={makeorient}>
-       Orient
+      Saturation
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Shadow
      </Button>
      <br/>
       <Button onPress={makeorient}>
-       Orient
+      Sharpen
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Unsharp Mask
      </Button>
      <br/>
       <Button onPress={makeorient}>
-       Orient
+      Unsharp Mask Radius
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Vibrance
      </Button>
      </Col>
      
