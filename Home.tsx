@@ -1,6 +1,8 @@
 import {createContext} from "react";
 import React, { useState } from 'react';
-import { Card, Col, Row, Button, Tex, Spacer } from "@nextui-org/react";
+import { Card, Col, Row, Button, Text, Spacer } from "@nextui-org/react";
+
+const ImgContext = createContext();
 
 let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -41,7 +43,9 @@ let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/gif-examples/imgix-logo-ani.gif"];
 
 const Home = () => {
+ 
   const [index, setIndex] = useState(0);
+  const [img, setImg] = useState(urls[index]);
     
   const increaseCount = () => {
     setIndex(index + 1);
