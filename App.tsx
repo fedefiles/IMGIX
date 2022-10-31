@@ -6,7 +6,7 @@ import Rotate from './Rotate';
 export default function App() {
   return (
     <Container>
-      <Row>
+      <Row justify="center" align="center">
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
       <Row justify="center" align="center">
@@ -20,7 +20,7 @@ export default function App() {
   href="/"
   css={{ 
     maxWidth: '$14', // space[12]
-    borderRadius: '$xs', // radii.xs
+    borderRadius: '$md', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
@@ -50,7 +50,7 @@ export default function App() {
   href="/rotate"
   css={{ 
     maxWidth: '$14', // space[12]
-    borderRadius: '$xs', // radii.xs
+    borderRadius: '$md', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
@@ -80,12 +80,12 @@ export default function App() {
   target="_parent"
   href="/adjust"
   css={{ 
-    maxWidth: '$14', // space[12]
-    borderRadius: '$xs', // radii.xs
+    maxWidth: '$14', // space[142]
+    borderRadius: '$md', // radii.xs
     border: '$space$1 solid transparent',
     background: '$gray800', // colors.gray800
     color: '$gray100',
-    height: '$14', // space[12]
+    height: '$14', // space[14]
     boxShadow: '$md', // shadows.md
     '&:hover': {
       background: '$gray100',
