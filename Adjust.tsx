@@ -83,7 +83,7 @@ const Adjust = () => {
      }
 
   const increaseCount = () => {
-    if (index < ( urls.length)) {
+    if (index < ((urls.length)+1)) {
       setIndex(index + 1);
     } else {
       setIndex(0)
@@ -121,52 +121,52 @@ const Adjust = () => {
      Brightness
      </Button>
       <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Contrast 
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Exposure
      </Button>
     
      <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Gamma
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Highlight
      </Button>
      <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Hue Shift
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Invert
      </Button>
      <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Saturation
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Shadow
      </Button>
      <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Sharpen
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Unsharp Mask
      </Button>
      <br/>
-      <Button onPress={makeorient}>
+      <Button onPress={increaseCount}>
       Unsharp Mask Radius
      </Button>
      <br/>
-     <Button onPress={makerotate}>
+     <Button onPress={increaseCount}>
      Vibrance
      </Button>
      </Col>
