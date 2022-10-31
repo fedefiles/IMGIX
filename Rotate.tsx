@@ -59,6 +59,7 @@ const Rotate = () => {
   const [orientcount, setOrientcount] = useState(0);
   const [angledeg, setAngledeg] = useState(0)
   
+  const img = useContext(ImgContext);
    
   const makeflip = () => {
     if (flipcount < ((flipops.length)))
@@ -101,7 +102,7 @@ const Rotate = () => {
       <Container fluid="true">
          
       <Imgix
-        src={urls[index]}
+        src={img}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
