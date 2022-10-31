@@ -90,7 +90,7 @@ const Rotate = () => {
   }
     
   return (
-    <div>  
+    <div className="Rotate-img">  
       <Container justify="center" align="center">
         <Col>
       <Imgix
