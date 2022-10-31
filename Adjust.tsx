@@ -53,7 +53,8 @@ const Adjust = () => {
   const [exposure, setExposure] = useState(0);
   const [gamma, setGamma] = useState(0);
   const [inv, setInv] = useState(false);
-  
+  const [satu, setSatu] = useState(0);
+  const [vibra, setVibra] = useState(0);
    
   const makebright = () => {
     if (bright < (100))
@@ -65,6 +66,24 @@ const Adjust = () => {
        
   }
 
+  const makesaturation = () => {
+    if (satu < (100))
+     {
+      setSatu(bright +20);
+    } else {
+      setSatu(0)
+    }
+       
+  }
+  const makevibrance = () => {
+    if (vibra < (100))
+     {
+      setVibra(bright +20);
+    } else {
+      setVibra(0)
+    }
+       
+  }
   const makeinvert = () => {
     if (inv == false)
      {
@@ -127,7 +146,7 @@ const Adjust = () => {
       <Imgix
         src={urls[index]}
         sizes="60vw"
-        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma, invert : inv }}
+        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma, invert : inv, sat : satu, vib : vibra}}
       />
 
       </Col>
@@ -161,11 +180,11 @@ const Adjust = () => {
      Invert
      </Button>
      <br/>
-      <Button onPress={increaseCount}>
+      <Button onPress={makesaturation}>
       Saturation
      </Button>
      <br/>
-     <Button onPress={increaseCount}>
+     <Button onPress={makevibrance}>
      Vibrance
      </Button>
      </Col>
