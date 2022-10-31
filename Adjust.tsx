@@ -48,22 +48,22 @@ let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 
 const Adjust = () => {
   const [index, setIndex] = useState(0);
-  const [flipcount, setFlipcount] = useState(0);
-  const [orientcount, setOrientcount] = useState(0);
-  const [angledeg, setAngledeg] = useState(0)
+  const [bright, setBright] = useState(0);
+  const [contrast, setContrast] = useState(0);
+  const [exposure, setExposure] = useState(0)
   
    
-  const makeflip = () => {
-    if (flipcount < ((flipops.length)))
+  const makebright = () => {
+    if (bright < (100))
      {
-      setFlipcount(flipcount + 1);
+      setBright(bright +20);
     } else {
-      setFlipcount(0)
+      setBright(0)
     }
        
   }
 
-  const makeorient = () => {
+  const makecontrast = () => {
     if (orientcount < (orientpops.length)) {
       setOrientcount(orientcount + 1);
     } else {
@@ -72,7 +72,7 @@ const Adjust = () => {
   }
      
 
-  const makerotate = () => {
+  const makeexposure = () => {
     if (angledeg < 360) {
       setAngledeg(angledeg +30)
      
@@ -117,7 +117,7 @@ const Adjust = () => {
      </Button>
     <br/>
        
-     <Button onPress={makeflip}>
+     <Button onPress={makebright}>
      Brightness
      </Button>
       <br/>
