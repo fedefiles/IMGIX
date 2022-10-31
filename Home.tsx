@@ -28,11 +28,7 @@ const Home = () => {
     </Card0>
    
      
-
-  <Spacer y={1} />
-  <Col justify="center" align="center">
-    
-       
+     
    
          </div>
   )
