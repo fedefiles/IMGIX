@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
-import ImgContext from "./ImgContext";
-import useContext from "react";
+
+
 
 //import ImgContext from "./ImgContext";
 
@@ -60,7 +60,6 @@ const Rotate = () => {
   const [orientcount, setOrientcount] = useState(0);
   const [angledeg, setAngledeg] = useState(0)
   
-  const img = useContext(ImgContext);
    
   const makeflip = () => {
     if (flipcount < ((flipops.length)))
@@ -103,7 +102,7 @@ const Rotate = () => {
       <Container fluid="true">
          
       <Imgix
-        src={img}
+        src={urls[index]}
         sizes="600px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
