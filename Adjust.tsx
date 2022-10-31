@@ -156,15 +156,6 @@ const Adjust = () => {
       <Button onPress={makegamma}>
       Gamma
      </Button>
-     <br/>
-     <Button onPress={increaseCount}>
-     Highlight
-     </Button>
-     <br/>
-      <Button onPress={increaseCount}>
-      Hue Shift
-     </Button>
-     <br/>
      <Button onPress={makeinvert}>
      Invert
      </Button>
@@ -172,23 +163,7 @@ const Adjust = () => {
       <Button onPress={increaseCount}>
       Saturation
      </Button>
-     <br/>
-     <Button onPress={increaseCount}>
-     Shadow
-     </Button>
-     <br/>
-      <Button onPress={increaseCount}>
-      Sharpen
-     </Button>
-     <br/>
-     <Button onPress={increaseCount}>
-     Unsharp Mask
-     </Button>
-     <br/>
-      <Button onPress={increaseCount}>
-      Unsharp Mask Radius
-     </Button>
-     <br/>
+    
      <Button onPress={increaseCount}>
      Vibrance
      </Button>
