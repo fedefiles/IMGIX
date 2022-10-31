@@ -9,7 +9,7 @@ export default function App() {
       <Row justify="center" align="center">
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
-      <Row justify="center" align="center">
+      <Row  align="center">
            
             <Col>
             <Button 
