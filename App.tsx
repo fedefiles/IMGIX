@@ -5,7 +5,7 @@ import Main from './Main';
 import Rotate from './Rotate';
 export default function App() {
   return (
-    <Container gap={0} css={{ d: 'flex', flexWrap: 'nowrap' }} >
+    <Container  >
       <Row justify="center" align="center">
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
