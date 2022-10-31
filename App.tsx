@@ -12,7 +12,7 @@ export default function App() {
       <Row  align="center">
      
             <Col>
-            <Spacer y={1} />  
+           
             <Button 
   auto 
   as="a"
