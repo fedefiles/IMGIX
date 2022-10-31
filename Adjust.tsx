@@ -50,7 +50,8 @@ const Adjust = () => {
   const [index, setIndex] = useState(0);
   const [bright, setBright] = useState(0);
   const [contrast, setContrast] = useState(0);
-  const [exposure, setExposure] = useState(0)
+  const [exposure, setExposure] = useState(0);
+  const [gamma, setGamma] = useState(0)
   
    
   const makebright = () => {
@@ -59,6 +60,16 @@ const Adjust = () => {
       setBright(bright +20);
     } else {
       setBright(0)
+    }
+       
+  }
+
+  const makegamma = () => {
+    if (gamma < (100))
+     {
+      setGamma(bright +20);
+    } else {
+      setGamma(0)
     }
        
   }
@@ -132,7 +143,7 @@ const Adjust = () => {
      </Button>
     
      <br/>
-      <Button onPress={increaseCount}>
+      <Button onPress={makegamma}>
       Gamma
      </Button>
      <br/>
