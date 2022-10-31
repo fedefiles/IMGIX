@@ -14,7 +14,7 @@ export default function App() {
             <Col>
            
             <Button 
-  auto 
+  Medium 
   as="a"
   rel="noopener noreferrer"
   target="_self"
@@ -44,7 +44,7 @@ export default function App() {
 </Col>
             <Col>
             <Button 
-  auto 
+  Medium 
   as="a"
   rel="noopener noreferrer"
   target="_self"
@@ -75,7 +75,7 @@ export default function App() {
             </Col>
             <Col>
             <Button 
-  auto 
+  Medium 
   as="a"
   rel="noopener noreferrer"
   target="_parent"
