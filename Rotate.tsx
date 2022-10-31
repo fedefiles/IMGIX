@@ -78,7 +78,7 @@ const Rotate = () => {
     } else {
       setOrientcount(0)
     }
-    
+  }
      
 
   const makerotate = () => {
@@ -128,4 +128,5 @@ const Rotate = () => {
      </div>
   )
 };
+
 export default Rotate;
