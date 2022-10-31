@@ -10,7 +10,7 @@ export default function App() {
       <Card css={{ $$cardColor: '$colors$neutral' }}>
       <Card.Body>
         
-        <Spacer y={1} />
+  
         <Row>
             <Col>
             <Button> <Link to='/'>Home</Link></Button>

@@ -33,12 +33,7 @@ const Home = () => {
   <Col justify="center" align="center">
     
        
-     <Button onPress={increaseCount}>
-        Pick an Image
-     </Button>
-      <br/>
-      
-     </Col>
+   
          </div>
   )
 };
