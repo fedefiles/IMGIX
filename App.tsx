@@ -10,7 +10,7 @@ export default function App() {
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
       <Row  align="center">
-           
+      <Spacer y={1} />  
             <Col>
             <Button 
   auto 
