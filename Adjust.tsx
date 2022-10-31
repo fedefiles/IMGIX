@@ -120,47 +120,48 @@ const Adjust = () => {
      <Button onPress={makerotate}>
         Rot
      </Button>
+    
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
      </Col>
-     <br/>
-      <Button onPress={makeorient}>
-       Orient
-     </Button>
-     <br/>
-     <Button onPress={makerotate}>
-        Rot
-     </Button>
-     <br/>
-      <Button onPress={makeorient}>
-       Orient
-     </Button>
-     <br/>
-     <Button onPress={makerotate}>
-        Rot
-     </Button>
-     <br/>
-      <Button onPress={makeorient}>
-       Orient
-     </Button>
-     <br/>
-     <Button onPress={makerotate}>
-        Rot
-     </Button>
-     <br/>
-      <Button onPress={makeorient}>
-       Orient
-     </Button>
-     <br/>
-     <Button onPress={makerotate}>
-        Rot
-     </Button>
-     <br/>
-      <Button onPress={makeorient}>
-       Orient
-     </Button>
-     <br/>
-     <Button onPress={makerotate}>
-        Rot
-     </Button>
      
      
      </div>
