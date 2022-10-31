@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
+import "./style2.css";
 
 
 let flipops:string[] = ["h", "v", "hv"];
