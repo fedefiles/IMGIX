@@ -64,22 +64,22 @@ const Adjust = () => {
   }
 
   const makecontrast = () => {
-    if (bright < (100))
+    if (contrast < (100))
      {
-      setBright(bright +20);
+      setContrast(contrast +20);
     } else {
-      setBright(0)
+      setContrast(0)
     }
        
   }
      
 
   const makeexposure = () => {
-    if (bright < (100))
+    if (exposure < (100))
     {
-     setBright(bright +20);
+      setExposure(exposure +20);
    } else {
-     setBright(0)
+    setExposure(0)
    }
       
  }
