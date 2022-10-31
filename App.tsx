@@ -10,9 +10,7 @@ export default function App() {
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
       <Row justify="center" align="center">
-            <Col>
-            <Button> <Link to='/'>Home</Link></Button>
-            </Col>
+           
             <Col>
             <Button 
   auto 
@@ -44,11 +42,65 @@ export default function App() {
 </Button>
 </Col>
             <Col>
-
-            <Button> <Link to='/rotate'>Rotate</Link></Button>
+            <Button 
+  auto 
+  as="a"
+  rel="noopener noreferrer"
+  target="_self"
+  href="/rotate"
+  css={{ 
+    maxWidth: '$12', // space[12]
+    borderRadius: '$xs', // radii.xs
+    border: '$space$1 solid transparent',
+    background: '$gray800', // colors.gray800
+    color: '$gray100',
+    height: '$12', // space[12]
+    boxShadow: '$md', // shadows.md
+    '&:hover': {
+      background: '$gray100',
+      color: '$gray800',
+    },
+    '&:active': {
+      background: '$gray200',
+    },
+    '&:focus': {
+      borderColor: '$gray400',
+    },
+  }}
+  >
+   Rotate
+</Button>
+          
             </Col>
             <Col>
-            <Button> <Link to='/adjust'>Adjust</Link></Button>
+            <Button 
+  auto 
+  as="a"
+  rel="noopener noreferrer"
+  target="_self"
+  href="/rotate"
+  css={{ 
+    maxWidth: '$12', // space[12]
+    borderRadius: '$xs', // radii.xs
+    border: '$space$1 solid transparent',
+    background: '$gray800', // colors.gray800
+    color: '$gray100',
+    height: '$12', // space[12]
+    boxShadow: '$md', // shadows.md
+    '&:hover': {
+      background: '$gray100',
+      color: '$gray800',
+    },
+    '&:active': {
+      background: '$gray200',
+    },
+    '&:focus': {
+      borderColor: '$gray400',
+    },
+  }}
+  >
+   Adjust
+</Button>
             </Col>
       </Row>
     </Card.Body>
