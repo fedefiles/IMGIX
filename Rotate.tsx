@@ -87,7 +87,7 @@ const Rotate = () => {
       setIndex(index +1)
      
     } else {
-      set setIndex(0)
+      setIndex(0)
     }
     
      }
