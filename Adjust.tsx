@@ -51,7 +51,8 @@ const Adjust = () => {
   const [bright, setBright] = useState(0);
   const [contrast, setContrast] = useState(0);
   const [exposure, setExposure] = useState(0);
-  const [gamma, setGamma] = useState(0)
+  const [gamma, setGamma] = useState(0);
+  const [inv, setInv] = useState(false);
   
    
   const makebright = () => {
@@ -64,6 +65,15 @@ const Adjust = () => {
        
   }
 
+  const makeinvert = () => {
+    if (inv == false)
+     {
+      setInv(true);
+    } else {
+      setInv(false);
+    }
+       
+  }
   const makegamma = () => {
     if (gamma < (100))
      {
@@ -117,7 +127,7 @@ const Adjust = () => {
       <Imgix
         src={urls[index]}
         sizes="60vw"
-        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma }}
+        imgixParams={{ fit: "crop", ar: "1:1", bri: bright, con : contrast, exp : exposure, gam :gamma, invert :  }}
       />
 
       </Col>
@@ -155,7 +165,7 @@ const Adjust = () => {
       Hue Shift
      </Button>
      <br/>
-     <Button onPress={increaseCount}>
+     <Button onPress={makeinvert}>
      Invert
      </Button>
      <br/>
