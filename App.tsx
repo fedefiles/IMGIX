@@ -18,7 +18,7 @@ export default function App() {
   auto 
   as="a"
   rel="noopener noreferrer"
-  target="_blank"
+  target="_self"
   href="/"
   css={{ 
     maxWidth: '$12', // space[12]
