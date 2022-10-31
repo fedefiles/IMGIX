@@ -90,7 +90,7 @@ const Adjust = () => {
     }
   }
    
-  }
+  
 
 
     const decreaseCount = () => {
@@ -174,7 +174,8 @@ const Adjust = () => {
      
      </div>
   )
-};
+
+  }
 
 
 export default Adjust;
