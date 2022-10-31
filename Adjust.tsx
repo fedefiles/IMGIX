@@ -83,8 +83,16 @@ const Adjust = () => {
      }
 
   const increaseCount = () => {
-    setIndex(index + 1);
+    if (index < ( urls.length)) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0)
+    }
   }
+   
+  }
+
+
     const decreaseCount = () => {
     setIndex(index - 1); 
   }
