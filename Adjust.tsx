@@ -125,7 +125,7 @@ const Adjust = () => {
  }
 
   const increaseCount = () => {
-    if (index < ((urls.length)+1)) {
+    if (index < ((urls.length)-1)) {
       setIndex(index + 1);
     } else {
       setIndex(0)
