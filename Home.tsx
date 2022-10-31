@@ -1,8 +1,9 @@
 import {createContext} from "react";
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Text, Spacer } from "@nextui-org/react";
+import Card0 from "./Card0"
 
-const ImgContext = createContext();
+
 
 let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 "https://assets.imgix.net/unsplash/bear.jpg",
@@ -56,36 +57,14 @@ const Home = () => {
     
   return (
     <div>
-      <Card css={{ w: "100%", h: "500px" }}>
+
+
+  <Card0>
+
    
-   <Card.Body css={{ p: 0 }}>
-     <Card.Image
-       src={urls[index]}
-       objectFit="cover"
-       width="100"
-       height="100%"
-       alt="Relaxing app background"
-       
-     />
-   </Card.Body>
-   <Card.Footer
-     isBlurred
-     css={{
-       position: "absolute",
-       bgBlur: "#0f111466",
-       borderTop: "$borderWeights$light solid $gray800",
-       bottom: 0,
-       zIndex: 1,
-     }}
-   >
-     <Row justify="center" align="center">
-       
      
-         
-     </Row>
-   </Card.Footer>
- </Card>
- <Spacer y={1} />
+
+  <Spacer y={1} />
   <Col justify="center" align="center">
     
        
