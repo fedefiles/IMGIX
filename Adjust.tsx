@@ -64,23 +64,25 @@ const Adjust = () => {
   }
 
   const makecontrast = () => {
-    if (orientcount < (orientpops.length)) {
-      setOrientcount(orientcount + 1);
+    if (bright < (100))
+     {
+      setBright(bright +20);
     } else {
-      setOrientcount(0)
+      setBright(0)
     }
+       
   }
      
 
   const makeexposure = () => {
-    if (angledeg < 360) {
-      setAngledeg(angledeg +30)
-     
-    } else {
-      setAngledeg(0)
-    }
-    
-     }
+    if (bright < (100))
+    {
+     setBright(bright +20);
+   } else {
+     setBright(0)
+   }
+      
+ }
 
   const increaseCount = () => {
     if (index < ((urls.length)+1)) {
