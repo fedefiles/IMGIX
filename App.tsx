@@ -7,8 +7,10 @@ export default function App() {
   return (
     
     <Container  >
-      
-          <Grid.Container gap={6} justify="center">
+      <Card css={{ $$cardColor: '$colors$primary' }}>
+    <Card.Body>
+      <Row justify="center" align="center">
+      <Grid.Container gap={4} justify="center">
         <Grid>
         <Button 
   Large 
@@ -100,6 +102,10 @@ export default function App() {
 </Button>
 </Grid>
    </Grid.Container>  
+      </Row>
+    </Card.Body>
+  </Card>
+          
     
   
   
