@@ -9,9 +9,7 @@ export default function App() {
       <Row>
       <Card css={{ $$cardColor: '$colors$neutral' }}>
       <Card.Body>
-        
-  
-        <Row>
+           
             <Col>
             <Button> <Link to='/'>Home</Link></Button>
             </Col>
@@ -21,12 +19,11 @@ export default function App() {
             <Col>
             <Button> <Link to='/adjust'>Adjust</Link></Button>
             </Col>
-          </Row>
-           
+                
       </Card.Body>
       
-    </Card>
-   </Row>
+      </Card>
+      </Row>
   
     <Spacer y={1} />
     <Main /> 
