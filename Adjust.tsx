@@ -69,7 +69,7 @@ const Adjust = () => {
   const makesaturation = () => {
     if (satu < (100))
      {
-      setSatu(bright +20);
+      setSatu(satu +20);
     } else {
       setSatu(0)
     }
@@ -78,7 +78,7 @@ const Adjust = () => {
   const makevibrance = () => {
     if (vibra < (100))
      {
-      setVibra(bright +20);
+      setVibra(vibra +20);
     } else {
       setVibra(0)
     }
