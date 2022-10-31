@@ -9,7 +9,7 @@ optimizations to images.
 
 In addition, it has a sandbox, where we can test each of the features that its api has,
 which is a powerful tool because we are generating the final image through
-parameters in real time 🔥, but with some disadventages.
+parameters in real time , but with some disadventages.
 
 
 This application is intended to improve in some way the UX / UI experience, creating 
@@ -20,20 +20,35 @@ The final result of this repo can be reviewed at:  https://react-ts-dnexum.stack
 
 The UI is made up of three views:
 
-* The Home
+* Home
 
 ![image](https://user-images.githubusercontent.com/84286517/198969905-452b1533-8914-40ee-9fa1-d42c7e81c884.png)
 
-* The Rotate view
+* Rotate view
 * 
 ![image](https://user-images.githubusercontent.com/84286517/198970366-20d556b2-e970-421d-977f-dd590dc1f897.png)
 
-* The Adjust view
+* Adjust view
 * 
 ![image](https://user-images.githubusercontent.com/84286517/198970506-07ba18b6-90d0-4071-9092-d03f20deea4b.png)
 
 Rotate and Adjust views gives both the chance to apply different options of rotation and adjustment 
 with the simplest solution, clicking buttons to get results.
+
+Local Setup instructions:
+
+To install the app localy, you can clone or download the repo to your local system. After that it is 
+
+necesary tu run th "npm install" or "yarn" to install all the package dependencies.
+
+The app uses Nextui library for different components so,  "yarn add @nextui-org/react" or "npm i @nextui-org/react"
+should be installed.
+
+The app uses Imgix Library so "npm install react-imgix"  or "yarn add react-imgix"
+  
+
+
+
 
 
 
