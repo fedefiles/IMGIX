@@ -1,0 +1,9 @@
+.Adjust-img {
+  display: flex;
+}
+
+.Adjust-img > img {
+  margin: 10px auto;
+  width: 10vw;
+  height: 200px;
+}

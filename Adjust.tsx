@@ -89,7 +89,7 @@ const Adjust = () => {
   }
     
   return (
-    <div>  
+    <div className="Adjust-img">  
       <Container justify="center" align="center">
         <Col>
       <Imgix
@@ -103,7 +103,7 @@ const Adjust = () => {
   <Col justify="center" align="center">
   <br/>
        
-  <Button onPress={increaseCount}>
+    <Button onPress={increaseCount}>
         Pick an image
      </Button>
     <br/>
@@ -120,6 +120,48 @@ const Adjust = () => {
         Rot
      </Button>
      </Col>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     <br/>
+      <Button onPress={makeorient}>
+       Orient
+     </Button>
+     <br/>
+     <Button onPress={makerotate}>
+        Rot
+     </Button>
+     
+     
      </div>
   )
 };
