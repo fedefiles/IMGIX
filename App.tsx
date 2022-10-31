@@ -22,22 +22,7 @@ export default function App() {
       </Row>
     </Card.Body>
     </Card>
-      <Card css={{ $$cardColor: '$colors$neutral' }}>
-      <Card.Body>
-           
-            <Col>
-            <Button> <Link to='/'>Home</Link></Button>
-            </Col>
-            <Col>
-            <Button> <Link to='/rotate'>Rotate</Link></Button>
-            </Col>
-            <Col>
-            <Button> <Link to='/adjust'>Adjust</Link></Button>
-            </Col>
-                
-      </Card.Body>
-      
-      </Card>
+     
       </Row>
   
     <Spacer y={1} />
