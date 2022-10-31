@@ -1,7 +1,7 @@
 import {createContext} from "react";
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Text, Spacer } from "@nextui-org/react";
-import Card0 from "./Card0"
+import {Card0} from "./Card0"
 
 
 
@@ -60,7 +60,8 @@ const Home = () => {
 
 
   <Card0>
-
+    
+    </Card0>
    
      
 
