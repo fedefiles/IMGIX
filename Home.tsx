@@ -45,7 +45,7 @@ let urls: string[] = ["https://assets.imgix.net/unsplash/alarmclock.jpg",
 const Home = () => {
  
   const [index, setIndex] = useState(0);
-  const [img, setImg] = useState(urls[index]);
+  const [img, setImg] = useState("");
     
   const increaseCount = () => {
     setIndex(index + 1);
