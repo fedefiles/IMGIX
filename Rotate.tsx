@@ -102,7 +102,7 @@ const Rotate = () => {
       
       </Container>
   <Col justify="center" align="center">
-
+  <br/>
        
   <Button onPress={increaseCount}>
         Pick an image
