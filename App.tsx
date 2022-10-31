@@ -5,7 +5,7 @@ import Main from './Main';
 import Rotate from './Rotate';
 export default function App() {
   return (
-    <Container >
+    <Container gap={0} >
       <Row justify="center" align="center">
       <Card css={{ $$cardColor: '$colors$primary' }}>
     <Card.Body>
