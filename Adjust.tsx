@@ -96,7 +96,7 @@ const Adjust = () => {
   const makegamma = () => {
     if (gamma < (100))
      {
-      setGamma(bright +20);
+      setGamma(gamma +20);
     } else {
       setGamma(0)
     }
