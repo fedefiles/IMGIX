@@ -91,15 +91,15 @@ const Rotate = () => {
     
   return (
     <div>  
-      <Container >
-         
+      <Container justify="center" align="center">
+        <Col>
       <Imgix
         src={urls[index]}
         sizes="500px"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
 
-      
+      </Col>
       </Container>
   <Col justify="center" align="center">
   <br/>
