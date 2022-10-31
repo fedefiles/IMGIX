@@ -21,16 +21,10 @@ const Home = () => {
     
   return (
     <div>
-
-
-  <Card0>
+    <Card0>
 
     </Card0>
-   
-     
-     
-   
-         </div>
+     </div>
   )
 };
 export default Home;
