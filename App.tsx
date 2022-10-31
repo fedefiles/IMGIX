@@ -8,7 +8,7 @@ export default function App() {
     
     <Container  >
       
-          <Grid.Container gap={6}>
+          <Grid.Container gap={6} justify="center">
         <Grid>
         <Button 
   Large 
