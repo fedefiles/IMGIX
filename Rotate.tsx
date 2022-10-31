@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Imgix from "react-imgix";
 import { Card, Col, Row, Button, Text, Container } from "@nextui-org/react";
-
+import "./style.css";
 
 let flipops:string[] = ["h", "v", "hv"];
 let orientpops:number[] = [1, 2, 3,4,5,6,7,8,90,180,270];
@@ -95,7 +95,7 @@ const Rotate = () => {
         <Col>
       <Imgix
         src={urls[index]}
-        sizes="70vw"
+        sizes="60vw"
         imgixParams={{ fit: "crop", ar: "1:1", flip: flipops[flipcount], orient: orientpops[orientcount], rot : angledeg,}}
       />
 
@@ -110,15 +110,15 @@ const Rotate = () => {
     <br/>
        
      <Button onPress={makeflip}>
-        Flip
+     Flip Axis
      </Button>
       <br/>
       <Button onPress={makeorient}>
-       Orient
+      Orientation
      </Button>
      <br/>
      <Button onPress={makerotate}>
-        Rot
+     Rotation
      </Button>
      </Col>
      </div>
